@@ -1,0 +1,37 @@
+# Python environments
+.venv/
+.venv-1/
+venv/
+**/.venv/
+**/venv/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# IDE files
+.vscode/
+
+# Temporary files
+*.log
+.DS_Store
+
+# Raw datasets
+backend/dataset/raw/
+backend/dataset/raw_2hand/
+
+# Temporary camera test images
+backend/camera_test_frame.jpg
+backend/hand_landmarks_result.jpg
+
+# Unused frontend starter
+/signbridge/

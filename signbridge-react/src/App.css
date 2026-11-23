@@ -1,0 +1,113 @@
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 30px 50px;
+  background: #101827;
+  color: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #a5b4fc;
+}
+
+.header p {
+  color: #cbd5e1;
+  font-size: 17px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.camera-section,
+.result-section {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #334155;
+}
+
+h2 {
+  margin-top: 0;
+  color: #c4b5fd;
+}
+
+.camera-box {
+  height: 300px;
+  background: #0f172a;
+  border: 2px dashed #64748b;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #94a3b8;
+  margin: 20px 0;
+}
+
+.result-box {
+  min-height: 150px;
+  background: #0f172a;
+  border-radius: 12px;
+  padding: 20px;
+  color: #cbd5e1;
+  margin: 20px 0;
+}
+
+button {
+  background: #818cf8;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #6366f1;
+}
+
+.language {
+  color: #a5b4fc;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .app {
+    padding: 20px;
+  }
+}
+
+
+.camera-box {
+  overflow: hidden;
+}
+
+.camera-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
