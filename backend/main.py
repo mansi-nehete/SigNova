@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import numpy as np
 import cv2
 
-from prediction import predict_sign
+from backend.prediction import predict_sign
 
 app = FastAPI(title="SignBridge API")
 

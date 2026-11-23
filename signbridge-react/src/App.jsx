@@ -157,7 +157,7 @@ function App() {
         <section className="camera-section">
           <h2>Sign Recognition</h2>
 
-          <div className="camera-box">
+          <div className={`camera-box ${cameraActive ? 'active' : ''}`}>
             <video
               ref={videoRef}
               autoPlay
@@ -166,7 +166,19 @@ function App() {
             />
 
             {!cameraActive && (
-              <p>Your camera preview will appear here.</p>
+              <div className="camera-placeholder">
+                <div className="camera-icon">📷</div>
+                <h3>Ready to Recognize</h3>
+                <p>Position your hand in front of the camera</p>
+                <span>Camera is currently off</span>
+              </div>
+            )}
+
+            {cameraActive && (
+              <div className="camera-live-label">
+                <span className="live-dot"></span>
+                LIVE
+              </div>
             )}
           </div>
 
